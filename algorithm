@@ -1,0 +1,202 @@
+Algorithm addition
+VAR :
+list : ARRAY_OF integer[5]
+
+
+BEGIN
+
+
+for i from 0 to list.length-1 step 1 DO
+
+if (list[i] = 0)
+
+nubr=numbr+1
+  
+
+ENDFOR
+
+
+
+VAR : 
+i , word := 0 integer
+
+BEGIN
+FOR i FROM 0 TO STR.length-1
+if(str[i] = " ") word := word + 1
+
+ENDFOR
+write("le nombre de mots est : " ,word+1)
+
+
+Algorithm Matrice
+
+VAR :
+n, m : integer
+tab : ARRAY_OF integer[n][m]
+
+BEGIN
+
+READ(n)
+READ(m)
+
+ FOR i FROM to n-1 step 1 DO
+ FOR j FROM to m-1 step 1 DO
+ 
+ READ(tab[i][j])
+
+ algorithm stack_array
+
+ VAR :
+ list : stack_array
+ nbr :=6
+ pointeur :=-1 : integer
+
+ BEGIN
+ for i from 0 to 2 step 1 DO
+write("entrer un element")
+READ(element)
+
+ if(pointeur < nbr) DO
+
+ pointeur = pointeur +1
+ list.push(element)
+endif
+ENDFOR
+
+ last = list.peek()
+
+ write("the lasst element" ,last)
+
+ last = list.peek()
+ pointeur =pointeur-1
+
+
+
+ end
+
+ algorithm queue_array
+
+ var : list : queue
+ nbr := 6 : integer
+ first:= -1 :integer
+
+ BEGIN
+  
+ write("entrez un element")
+ READ(element)
+  if(list.isemply()) DO
+   first :=first +1
+   last :last +1
+
+   list.enqueue(element)
+    else DO
+      
+    if(last < nbr) DO
+    last := last +1
+    list.enqueue(element)
+
+    else
+    write("la list est rempli")
+    endif
+      endif
+
+      if (list.isemply() === false)
+      list.dequeue()
+      first : = first +1
+       else
+write("liste est vide")
+
+NBR :=list.peek()
+ end
+
+ var 
+ list : hash_table <integer,string>
+ BEGIN
+
+ list.insert(1 :"un")
+ list.insert(2 :"deux")
+
+ item := list.get(2 // "deux")
+ list
+.delete(1)
+
+ end
+
+ algorithm selection_sort
+
+ var
+list : ARRAY_of integer
+
+BEGIN
+
+
+for i from 0 list_lenght-1 step 1 DO
+for j from i+1 to length-1 step 1 DO
+
+if(list[j] < list[i]) DO
+
+tmp :=(list[i])
+list[i] :=list[j]
+list[j] =tmp
+
+endif
+ENDFOR
+
+end
+
+
+algorithm selection_bubble_sort
+
+var
+list : ARRAY_of integer
+
+BEGIN
+
+
+for i from 0 list_lenght-1 step 1 DO
+indice := false
+for j from i+1 to length-1 step 1 DO
+
+if(list[j] > list[i]) DO
+
+tmp :=(list[j])
+list[j] :=list[j+1]
+list[j] =tmp
+
+indice: =true
+
+endif
+ENDFOR
+
+end
+
+
+algorithm linear_search
+
+var
+list : ARRAY_of integer
+numb : index : integer
+bool : false : boolean
+
+BEGIN
+ READ(numb)
+
+
+for i from 0 list_lenght-1 step 1 DO
+
+
+if(numb = list[i]) DO
+index := i
+bool := true
+break
+
+endif
+ENDFOR
+
+if (bool === true) write("le nombre exsiste dans l'indice" ,i)
+  else write("le nombre n'exsite pas")
+
+end
+
+
+
